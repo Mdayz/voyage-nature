@@ -98,6 +98,10 @@ main {
   top: 90px;
 }
 
+#accueil {
+  padding-top: 8em;
+}
+
 #accueil-img {
   align-self: center;
   border-radius: 10%;
@@ -256,5 +260,4 @@ main {
     height: auto;
     max-height: 40vw;
   }
-
 }
