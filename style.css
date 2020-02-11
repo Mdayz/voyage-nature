@@ -24,16 +24,17 @@ html {
 
 .anchor {
   display: block;
-  padding-top: 105px;
-  margin-top: -105px;
+  padding-top: 106px;
+  margin-top: -106px;
 }
 
 #header-header {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.164);
   z-index: 100;
   position: fixed;
   width: 100%;
   height: 106px;
-  background: linear-gradient(hsl(0, 0%, 100%) 96%, hsla(0, 0%, 100%, 0) 99%);
+  background: white;
 }
 
 ::selection {
@@ -41,7 +42,7 @@ html {
 }
 
 .my-nav {
-  background: linear-gradient(hsl(0, 0%, 100%) 96%, hsla(0, 0%, 100%, 0) 99%);
+  background: white;
   z-index: 100;
   max-width: 1200px;
   margin: 0 auto;
@@ -76,7 +77,16 @@ html {
 }
 
 .logo {
+  transition: all 80ms ease-out;
+  filter: drop-shadow(1px 1px 3px rgba(214, 214, 214, 0.863))
+    drop-shadow(-1px -1px 3px rgba(236, 236, 236, 0.863));
   width: 80px;
+}
+
+.logo:hover {
+  transition: all 80ms ease-out;
+  filter: drop-shadow(1px 1px 3px rgba(4, 235, 23, 0.8))
+    drop-shadow(-1px -1px 3px rgba(4, 235, 24, 0.6));
 }
 
 #logo-text {
@@ -86,18 +96,6 @@ html {
 main {
   position: relative;
   top: 90px;
-}
-
-#accueil {
-  display: flex;
-}
-
-#accueil-text {
-  display: flex;
-  flex-direction: column;
-}
-
-#accueil-description {
 }
 
 #accueil-img {
@@ -182,7 +180,7 @@ main {
   .location-img {
     max-width: 50vw;
     height: auto;
-    max-height: 50vw;
+    max-height: 40vw;
   }
 
   .location-description {
@@ -252,4 +250,11 @@ main {
   #employes {
     display: flex;
   }
+
+  .location-img {
+    max-width: 50vw;
+    height: auto;
+    max-height: 40vw;
+  }
+
 }
